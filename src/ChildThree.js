@@ -10,8 +10,16 @@ class ChildThree extends React.Component {
     
     render() {
         return (
-            <div>
-                <p>Class component sees {this.props.store.myVal}</p>
+            <div className="area" >
+                <h3>Class Component with HOC</h3>
+                <p><code>myVal</code> is {this.props.store.myVal}</p>
+                <button onClick={() => {
+                    this.props.setStore({
+                        myVal: 42,
+                    });
+                }}>
+                    Set myVal to 42
+                </button>
             </div>
         )
     }

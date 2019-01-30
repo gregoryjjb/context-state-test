@@ -4,6 +4,8 @@ import ChildOne from './ChildOne';
 import ChildTwo from './ChildTwo';
 import ChildThree from './ChildThree';
 
+import './index.css';
+
 class App extends Component {
   render() {
     return (
